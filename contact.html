@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title>Proyecto de curso de desarrollo web</title>
+	<!-- jQuery y jQueryUi -->
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js">
+	</script>
+	<!--jQuery Validator-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+	<!--
+		Por alguna razón no me valida los mensajes en español aunque en el
+		json que pide le indique la propiedad lang: 'es'
+
+	<script type="text/javascript" src="js/jquery.form-validator.min.js"></script>
+	-->
+	<!-- CSS del jQuery ui -->
+	<link id="theme" rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link id="theme" rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+	<link id="theme" rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+	<!--Script propio-->
+	<script type="text/javascript" src="js/main.js"></script>
+  	<!-- Hojas de estilo en cascada -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link id="tema" rel="stylesheet" type="text/css" href="css/greenTheme.css">
+</head>
+<body>
+	<div id="change-theme">
+		<div id="to-green"></div>
+		<div id="to-red"></div>
+		<div id="to-blue"></div>
+		
+	</div>
+	<section id="global">
+			<!-- Cabecera de la página -->
+			<header>
+				<div id="logo">
+					<h1>PROYECTO JS</h1>
+				</div>
+				<div class="clearfix"></div>
+				<nav id="menu">
+					<ul>
+						<li><a href="index.html">INICIO</a></li>
+						<li><a href="reloc.html">RELOC</a></li>
+						<li><a href="about.html">SOBRE MI</a></li>
+						<li><a href="contact.html">CONTACTO</a></li>
+					</ul>
+				</nav>				
+			</header>
+			<main id="content">
+				<nav id="box">
+					<h2>Contacto</h2>
+					<form id="form_contac" action="" method="POST">
+						<label for="name">Nombre:</label>
+						<br>
+						<input type="text" name="name" data-validation="alphanumeric">
+						<label for="lastName">Apellidos:</label>
+						<input type="text" name="lastName" data-validation="alphanumeric">
+						<br>
+						<label for="email">Correo electronico:</label>
+						<input type="email" name="email" data-validation="email">
+						<br>
+						<label for="sex">Sexo:</label>
+						<br>						
+						<select name="sex" data-validation="required">
+							<option value="Masculino">Masculino</option>
+							<option value="Femenino">Femenino</option>
+							<option value="No binario">No binario</option>
+						</select>
+						<br>
+						<label for="bday">Fecha de nacimiento:</label>
+						<br>
+						<input type="text" name="bday" data-validation="date" data-validation-format="mm/dd/yyyy">
+						<br>
+						<label for="edad">Edad:</label>
+						<br>
+						<input type="number" name="edad" data-validation="number">
+						<br>
+						<input type="submit" name="enviar" value="enviar">
+						<input type="reset" name="enviar" value="borrar">
+					</form>
+				</nav>
+				<div class="clearfix"></div>
+			</main>
+	</section>
+	<footer>
+		José Alfredo Casal Salgueiro &copy;
+		<a href="#" class="subir">Ir arriba</a>
+	</footer>	
+</body>
+</html>
+

@@ -1,0 +1,303 @@
+/*Hoja de estilos en cascada de el proyecto de JS*/
+
+/*Reglas de estilos que se otorgan a toda la página en general
+realmente le quitamos el formato al html para despues corregirlo.
+*/
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+/*Clase hecha especificamente para limpiar los flotados*/
+.clearfix{
+	float: none;
+	/*Se encarga de limpiar los flotados*/
+	clear: both;
+}
+/*reglas de estilos para la parte principal de la página es decir el
+elemento secction
+*/
+#global{
+	width: 65%;
+	margin: 0px auto;
+	margin-top: 30px;
+	background-color: white;
+	padding: 20px;
+	box-shadow: 0px 0px 2px gray;
+}
+
+/*
+Reglas de estilo para la sección del logo de la página.
+*/
+#logo{
+	font-family: "Verdana", "Arial";
+	font-size: 20px;
+	letter-spacing: 4px;
+	line-height: 65px;
+	/*Color verde como oscuro*/
+	color: white;
+	text-align: center;
+	width: 385px;
+	height: 65px;
+	margin-bottom: 20px;
+	float: left;
+}
+/*
+Reglas de estilo para la barra de navegación.
+*/
+#menu{
+	font-family: "Vetica", Arial;
+	width: 100%;
+	/*Convierte texto en mayusculas*/
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+/*Reglas de estilo para el elemento ul dentro de menu*/
+#menu ul{
+	line-height: 46px;
+}
+/*Reglas de estilo para el elemento li dentro de ul dentro de menu*/
+#menu ul li{
+	height: 46px;
+	/*Inline-block indica que los elementos estarán en linea en ves de ensimados*/
+	display: inline-block;
+	/*Indica que este elemento puede tener una transición de 300 millisegundos
+	cuando se le agrege alguna caracteristica de tipo over por ejemplo.
+	*/
+	transition: all 300ms;
+}
+
+/*Reglas de estilo para los elementos a dentro del id menu.*/
+#menu a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+/*
+Reglas de estilo para el elemento del id post
+*/
+#post{
+	width: 60%;
+	float: left;
+	font-family: "Vetica", "Arial";	
+}
+
+/*
+Reglas de estilo para la clase posten general
+*/
+.post{
+	padding: 7px;
+}
+/*
+Reglas de estilo para el h2 de la clase post
+*/
+.post h2{
+	font-size: 30px;
+	color: #333;	
+}
+/*
+Reglas de estilo para la clase fecha dentro de la clase post.
+*/
+.post .fecha{
+	display: block;
+	color: gray;
+	margin-top: 5px;
+}
+
+/*
+Reglas de estilo para el elemento p dentro de la clase post
+*/
+.post p{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 20px;
+	text-align: justify;
+}
+
+/*
+Reglas de estilo para la clase buttom-more.
+*/
+.buttom-more{
+	display: block;
+	padding: 15px;
+	font-size: 15px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	margin-top: 10px;
+	width: 70px;
+	margin-bottom: 20px;
+}
+/*
+Reglas de estilo para el elemento con el id sidebar
+*/
+#sidebar{
+	font-family: Vetica, Arial;
+	width: 31%;
+	float: right;
+}
+/*
+Reglas de estilo para el titulo h4 del elemento sidebar
+*/
+#sidebar h4{
+	margin-top: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+	line-height: 10px;
+	color: #333;
+	background: url("../img/lines.png") repeat-x;
+}
+/*
+Reglas de estilo para la imagen del elemento figure
+*/
+#sidebar figure img{
+	width: 100%;
+}
+/*
+Reglas de estilo para el elemento p del sidebar
+*/
+#sidebar p{
+	font-size: 13px;
+	text-align: justify;	
+}
+
+/*
+Reglas de estilo para los inputs de los formularios.
+*/
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"],
+select{
+	padding: 5px;
+	border-radius: 2px;
+	border-color: 1px solid #ccc;
+	width: 80%;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+/*
+Reglas de estilo para los botones de los formularios.
+*/
+form input[type="submit"],
+form input[type="reset"]{
+	background: #eee;
+	padding: 5px;
+	border: 1px solid #ccc;
+	color: #333;
+	cursor: pointer;
+}
+
+/*
+Reglas de estilo para el píe de página.
+*/
+footer{
+	font-family: Vetica, Arial;
+	color: white;
+	height: 47px;
+	/*Este atributo crea un background con las dimensiones y opasidad que se
+	le indique.*/
+	background: rgba(51,51,51,0.70);
+	margin: 0px auto;
+	width: 65%;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 50px;
+	line-height: 47px;
+}
+/*Se cambia la altura de las imagenes del slider.*/
+.bx-wrapper, .bx-viewport{
+	height: 250px !important;
+}
+
+#change-theme{
+	position: fixed;
+	top: 40%;
+	background-color: rgba(51,51,51,0.5);
+	width: 50px;
+	height: 100px;
+}
+/*
+Reglas de estilo comunes para el apartado del cambio de tema
+*/
+#to-green,
+#to-red,
+#to-blue{
+	width: 25px;
+	height: 30px;
+	border: 1px solid white;
+	display: block;
+	margin: 0px auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+/*Fondo para la caja verde*/
+#to-green{
+	background: #235E3D;	
+}
+
+/*Fondo para la caja roja*/
+#to-red{
+	background: #CA3413;
+}
+
+/*Fondo para la caja azul*/
+#to-blue{
+	background: #1f87C4;
+}
+/*Reglas de estilo para el botón que realiza un slice hacia arriba*/
+.subir{
+	color: white;
+	text-decoration: none;
+	display: block;
+	float: right;
+}
+
+#acordeon{
+	margin-top: 60px;
+}
+#box{
+	width: 60%;
+	float: left;	
+}
+
+#box p{
+	text-align: justify;
+}
+
+#reloc{
+	font-size: 50px;
+	font-weight: bold;
+	font-family: Vetica, AriaL;
+	color: #333;
+	border: 5px dashed;
+	width: 30%;
+	padding: 30px;
+	margin: 0px auto;
+}
+
+#form_contact{
+	width: 50%;
+	margin-top: 15px;
+	font-family: Vetica, Arial;	
+}
+
+#form_contact label{
+	display: block;
+	margin-top: 5px;
+	width: 100%;
+}
+
+.form-error{
+	float: right;
+	font-size: 11px;
+	background: red;
+	color: white;
+	padding: 10px;
+	width: 65%;
+}

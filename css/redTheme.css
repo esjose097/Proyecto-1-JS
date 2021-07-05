@@ -1,0 +1,46 @@
+/*
+Elemento css para el tema de color verde.
+*/
+
+
+/*
+Estilos del body siendo exacto todo lo que est fuera de una etiqueta con
+un estilo personalizado.
+*/
+body {
+	background: url("../img/rojo.jpg");
+	background-attachment: fixed;
+}
+
+/*Reglas de estilo para la sección del logo de la página.*/
+#logo{
+	/*Color verde como oscuro*/
+	background: #CA3413;
+}
+
+/*Reglas de estilo para la barra de navegación.*/
+#menu{	
+	background: #333;
+}
+
+/*Reglas de estilo para cuando se pase el mouse por ensima del elemento
+li dentro de ul dentro de menu.*/
+#menu ul li:hover{
+	background-color: #CA3413;
+}
+
+/*
+Reglas de estilo para la clase buttom-more.
+*/
+.buttom-more{
+	background-color: #CA3413;
+}
+
+/*
+Reglas de estilo para el píe de página.
+*/
+footer{
+	/*Este atributo crea un background con las dimensiones y opasidad que se
+	le indique.*/
+	background: rgba(51,51,51,0.70);
+}

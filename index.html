@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title>Proyecto de curso de desarrollo web</title>
+	<!-- jQuery y jQueryUi -->
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<!-- Moments.js libreria para dar formato a fechas -->	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"></script>
+	<!--Script propio-->
+	<script type="text/javascript" src="js/main.js"></script>
+	<!--css del slider importado por web-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<!--Scrips necesarios para el funcionamiento del slider-->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<!-- JQuery -->
+  	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  	<!-- Hojas de estilo en cascada -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link id="tema" rel="stylesheet" type="text/css" href="css/greenTheme.css">
+</head>
+<body>
+	<div id="change-theme">
+		<div id="to-green"></div>
+		<div id="to-red"></div>
+		<div id="to-blue"></div>
+		
+	</div>
+	<section id="global">
+			<!-- Cabecera de la página -->
+			<header>
+				<div id="logo">
+					<h1>PROYECTO JS</h1>
+				</div>
+				<div class="clearfix"></div>
+				<nav id="menu">
+					<ul>
+						<li><a href="index.html">INICIO</a></li>
+						<li><a href="reloc.html">RELOC</a></li>
+						<li><a href="about.html">SOBRE MI</a></li>
+						<li><a href="contact.html">CONTACTO</a></li>
+					</ul>
+				</nav>				
+			</header>
+			<!-- Slider -->
+			<div id="slider">
+			<div class="bxslider">
+				<div><img src="img/hojas.jpg" title="Hojas"></div>
+				<div><img src="img/rojo.jpg" title="rojo"></div>
+				<div><img src="img/cielo.jpg" title="cielo"></div>
+				</div>			
+			</div>
+			<main id="content">
+				<div id="post">
+					<!-- Cargados mediante javaScript -->
+				</div>
+				<aside id="sidebar">
+					<div id="about">
+						<h4>¿Quien soy?</h4>
+						<figure>
+							<img src="img/caracol.jpg">
+						</figure>
+						<p>
+							The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+						</p>
+					</div>
+					<div id="login">
+						<h4>Identificate</h4>
+						<form>
+							<label for="name">Nombre</label>
+							<input type="text" name="name" id="form_name">
+
+							<label for="email">Correo</label>
+							<input type="email" name="email" id="form_email">
+
+							<label for="pass">Contraseña</label>
+							<input type="password" name="pass" id="form_pass">
+
+							<input type="submit" name="enviar" value="Iniciar sesión">
+							<input type="reset" name="Limpiar" value="Limpiar">							
+						</form>
+					</div>
+				</aside>
+				<div class="clearfix"></div>
+			</main>
+	</section>
+	<footer>
+		José Alfredo Casal Salgueiro &copy;
+		<a href="#" class="subir">Ir arriba</a>
+	</footer>	
+</body>
+</html>
